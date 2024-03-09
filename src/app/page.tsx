@@ -1,7 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { redirect } from "next/navigation";
 
 export default function Home() {
+  
+  redirect('/login');
+
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -15,7 +19,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{" "}
+            By{"Duncan"}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
